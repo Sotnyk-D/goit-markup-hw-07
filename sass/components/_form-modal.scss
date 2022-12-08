@@ -60,11 +60,16 @@
   padding-right: 42px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover + .hero-form__icon,
-  &:focus + .hero-form__icon {
+  &:hover,
+  &:focus{
+   border-color: $accent-color;
+   outline: transparent;
+ & + .hero-form__icon{
     fill: $accent-color;
   }
 }
+}
+
 
 // .form-comit label {
 //   margin-bottom: 4px;

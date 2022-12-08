@@ -440,8 +440,8 @@ p {
   left: 10px;
   background-origin: border-box;
   /* border-color:var(--prymery-text-color); */
-  fill: var(--pramery-white-color);
-}
+  /* fill: var(--pramery-white-color); */
+/* } */
 /* 
 .checkbox-input {
   -webkit-appearance: none;
@@ -485,7 +485,7 @@ p {
 
 /* Feature */
 
-.title-feature-text {
+/* .title-feature-text {
   padding-top: 30px;
 }
 
@@ -527,11 +527,11 @@ p {
   border-radius: 4px;
   text-align: center;
   /* margin-bottom: 55px; */
-}
+/* } */ */
 
 /* Works */
 
-.example {
+/* .example {
   display: flex;
 }
 
@@ -574,11 +574,11 @@ p {
   background-color: rgba(47, 48, 58, 0.8);
 
   color: var(--pramery-white-color);
-}
+} */
 
 /* Team */
 
-.team {
+/* .team {
   background-color: var(--secondary-backgraund-color);
   text-align: center;
 }
@@ -626,11 +626,11 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-}
+} */
 
 /* Иконки на соц сети  */
 
-.social {
+/* .social {
   display: inline-flex;
   margin-bottom: 30px;
 }
@@ -666,10 +666,10 @@ p {
   display: flex;
   width: 20px;
   height: 20px;
-}
+} */
 
 /* Clients */
-
+/* 
 .title-clients {
   font-weight: 700;
   font-size: 36px;
@@ -719,11 +719,11 @@ p {
 .clients-link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
-}
+} */
 
 /* Footer */
 
-.footer {
+/* .footer {
   background-color: var(--pramery-footer-color);
   display: flex;
   flex-direction: column;
@@ -792,11 +792,11 @@ p {
 .address-tel:hover,
 .address-tel:focus {
   color: var(--accent-color);
-}
+} */
 
 /* footer icon */
 
-.footer-container {
+/* .footer-container {
   display: flex;
   align-items: baseline;
 }
@@ -909,11 +909,11 @@ p {
   height: 24px;
   position: absolute;
   right: 15.19%;
-}
+} */
 
 /* Portfolio */
 
-.portfolio {
+/* .portfolio {
   display: inline-block;
 }
 
@@ -946,7 +946,7 @@ p {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 
 .card {
   display: flex;
