@@ -17,32 +17,36 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    <header class="page-header">
+    <header class="header">
       <!-- site nav -->
-      <nav class="container main-nav">
-        <a href="./index.html" class="logo list">
-          <span class="color-blu">Web</span>
-          <span class="color-black">Studio</span>
+      <nav class="site-logo container">
+        <a href="./index.html" class="site-logo__link list">
+          <span class="site-logo__color-blu">Web</span>
+          <span class="site-logo__color-black">Studio</span>
         </a>
         <ul class="site-nav list">
-          <li class="nav"><a href="" class="link current">Студія</a></li>
-          <li class="nav">
-            <a href="./portfolio.html" class="link">Портфоліо</a>
+          <li class="site-nav__list">
+            <a class="site-nav__link site-nav__current" href="">Студія</a>
           </li>
-          <li class="nav"><a href="" class="link">Контакти</a></li>
+          <li class="site-nav__list">
+            <a class="site-nav__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="site-nav__list">
+            <a class="site-nav__link" href="">Контакти</a>
+          </li>
         </ul>
         <!-- Contakt -->
         <ul class="contakt-nav list">
-          <li class="item">
-            <a class="contakt-mail" href="mailto:info@devstudio.com"
-              ><svg class="mail">
+          <li class="contakt-nav__item">
+            <a class="contakt-nav__mail" href="mailto:info@devstudio.com"
+              ><svg class="contakt-nav__icon--mail">
                 <use href="./imeges/symbol-defs.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a class="contakt-tel" href="tel:+380961111111">
-              <svg class="tel">
+          <li class="contakt-nav__item">
+            <a class="contakt-nav__tel" href="tel:+380961111111">
+              <svg class="contakt-nav__icon--tel">
                 <use href="./imeges/symbol-defs.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -53,69 +57,83 @@
     <main>
       <!-- Hero -->
       <section class="hero section container">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="button" data-modal-open>Замовити послугу</button>
-        <div class="backdrop-hero is-hidden" data-modal>
+        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <button class="hero__button" data-modal-open>Замовити послугу</button>
+        <div class="hero__backdrop hero__is-hidden" data-modal>
           <div class="modal-hero">
-            <button class="closed-modal" data-modal-close>
-              <svg class="icon-closed" height="18" width="18">
+            <button class="modal-hero__close" data-modal-close>
+              <svg class="modal-hero__icon" height="18" width="18">
                 <use href="./imeges/symbol-defs.svg#icon-close-black"></use>
               </svg>
             </button>
-            <form class="form">
-              <b class="form-title">Залиште свої дані, ми вам передзвонимо </b>
-              <div class="form-field">
-                <label class="form-label" for="name">Імʼя </label>
-                <input type="text" name="name" id="name" class="form-input" />
-                <svg class="icon-form">
+            <form class="hero-form">
+              <b class="hero-form__title"
+                >Залиште свої дані, ми вам передзвонимо
+              </b>
+              <div class="hero-form__field">
+                <label class="hero-form__label" for="name">Імʼя </label>
+                <input
+                  class="hero-form__input"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
+                <svg class="hero-form__icon">
                   <use href="./imeges/symbol-defs.svg#icon-person"></use>
                 </svg>
               </div>
-              <div class="form-field">
-                <label for="tel" class="form-label">Телефон </label>
-                <input type="tel" name="tel" id="tel" class="form-input" />
-                <svg class="icon-form">
+              <div class="hero-form__field">
+                <label class="hero-form__label" for="tel">Телефон </label>
+                <input
+                  class="hero-form__input"
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                />
+                <svg class="hero-form__icon">
                   <use href="./imeges/symbol-defs.svg#icon-phone"></use>
                 </svg>
               </div>
-              <div class="form-field">
-                <label for="email" class="form-label">Пошта </label>
+              <div class="hero-form__field">
+                <label class="hero-form__label" for="email">Пошта </label>
                 <input
+                  class="hero-form__input"
                   type="email"
                   name="email"
                   id="email"
-                  class="form-input"
                 />
-                <svg class="icon-form">
+                <svg class="hero-form__icon">
                   <use href="./imeges/symbol-defs.svg#icon-email"></use>
                 </svg>
               </div>
-              <div class="form-comit">
-                <label for="coment" class="form-label">Коментар</label>
+              <div class="hero-form__comit">
+                <label class="hero-form__label" for="coment">Коментар</label>
                 <textarea
-                  class="coment"
+                  class="hero-form__coment"
                   name="coment"
                   placeholder="Введіть текст"
                   id="coment"
                   rows="10"
                 ></textarea>
               </div>
-              <div class="check-box">
+              <div class="hero-form__check--box">
                 <input
-                  class="checkbox-input"
+                  class="hero-form__checkbox-input"
                   type="checkbox"
                   name="policy"
                   id="policy"
                   value="Умови договору"
                 />
-                <svg class="icon-box">
+                <svg class="hero-form__icon-box">
                   <use href="./imeges/symbol-defs.svg#icon-icon-check"></use>
                 </svg>
                 <label for="policy">Погоджуюся з розсилкою та приймаю </label>
-                <a class="policy-link" href="#">Умови договору</a>
+                <a class="hero-form__policy" href="#">Умови договору</a>
               </div>
-              <div class="send-btn">
-                <button class="send" tupe="submit">Відправити</button>
+              <div class="hero-form__send-btn">
+                <button class="hero-form__send" tupe="submit">
+                  Відправити
+                </button>
               </div>
             </form>
           </div>
