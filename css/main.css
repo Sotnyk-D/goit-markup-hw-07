@@ -311,11 +311,11 @@ p {
   display: flex;
 }
 
-.site-nav__list {
+.site-nav__item {
   margin-right: 50px;
 }
 
-.site-nav__list:last-child {
+.site-nav__item:last-child {
   margin-right: 0;
 }
 
@@ -553,10 +553,10 @@ p {
 }
 
 .hero-form__label {
-  margin-bottom: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.1666666667;
@@ -619,7 +619,12 @@ p {
 }
 
 .hero-form__check--box {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7142857143;
@@ -628,33 +633,53 @@ p {
 }
 
 .hero-form__checkbox-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  bottom: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
-.hero-form__checkbox-input:checked + .hero-form__icon-box {
+.hero-form__checkbox-input:checked + .hero-form__lable .hero-form__icon-box {
   fill: #2196f3;
-  border-color: #2196f3;
-  background-size: contain;
-  background-origin: border-box;
+  border-color: transparent;
+  background: #2196f3;
 }
 
 .hero-form__icon-box {
-  display: inline-block;
-  position: absolute;
+  margin-right: 9px;
+}
+
+.hero-form__lable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-form__icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 2px solid #212121;
   border-radius: 4px;
   height: 15px;
   width: 16px;
-  top: 10%;
-  left: 10px;
-  background-origin: border-box;
-  fill: #ffffff;
 }
 
 .hero-form__policy {
+  margin-left: 10px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7142857143;

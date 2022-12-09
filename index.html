@@ -25,13 +25,13 @@
           <span class="site-logo__color-black">Studio</span>
         </a>
         <ul class="site-nav list">
-          <li class="site-nav__list">
+          <li class="site-nav__item">
             <a class="site-nav__link site-nav__current" href="">Студія</a>
           </li>
-          <li class="site-nav__list">
+          <li class="site-nav__item">
             <a class="site-nav__link" href="./portfolio.html">Портфоліо</a>
           </li>
-          <li class="site-nav__list">
+          <li class="site-nav__item">
             <a class="site-nav__link" href="">Контакти</a>
           </li>
         </ul>
@@ -124,10 +124,15 @@
                   id="policy"
                   value="Умови договору"
                 />
-                <svg class="hero-form__icon-box">
-                  <use href="./imeges/symbol-defs.svg#icon-icon-check"></use>
-                </svg>
-                <label for="policy">Погоджуюся з розсилкою та приймаю </label>
+                <label class="hero-form__lable" for="policy">
+                  <span class="hero-form__icon-box">
+                    <svg class="hero-form__icon-chekc" width="11" height="8" >
+                      <use
+                        href="./imeges/symbol-defs.svg#icon-check2" 
+                      ></use>
+                    </svg></span
+                  >Погоджуюся з розсилкою та приймаю
+                </label>
                 <a class="hero-form__policy" href="#">Умови договору</a>
               </div>
               <div class="hero-form__send-btn">
@@ -524,12 +529,12 @@
                 >
               </li>
               <li>
-                <a class="footer__mail list" href="mailto:info@devstudio.com" 
+                <a class="footer__mail list" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a class="footer__tel list" href="tel:+380961111111" 
+                <a class="footer__tel list" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -576,7 +581,7 @@
           <div class="subscribe__batton">
             <label for="email" class=""> </label>
             <input
-            class="subscribe__input"
+              class="subscribe__input"
               type="email"
               name="email"
               id="email"
